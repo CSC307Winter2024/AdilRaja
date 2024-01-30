@@ -20,12 +20,12 @@ export default function Job({ params }) {
   }, []);
 
   if (loading) {
-    return <div> Loading... </div>
+    return <div> Loading </div>
   } else {
     return (
       <div>
         <Link href="/">Home</Link>
-        <p>This job page details my experience in {jobs[params.index].title}. Key highlights include: {jobs[params.index].desc}</p>
+        <p>This is my job page that has an ID of: {params.index} - The company I worked at was {jobs[params.index].title}. </p>
       </div>
     );
   }
